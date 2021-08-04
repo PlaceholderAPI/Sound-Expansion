@@ -52,7 +52,7 @@ public class SoundExpansion extends PlaceholderExpansion implements Cacheable {
 		
 		if (identifier.startsWith("all_")) {
 			announce = true;
-			identifier = identifier.replaceFirst(Pattern.quote("all_"), "");
+			identifier = identifier.substring(4);
 		}
 		
 		if (sounds.containsKey(identifier)) {
